@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOTUS SPA</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f9fa;
+        }
+        .custom-bg-color {
+        background-color: #34ddc9; /* Example: change this to your desired color */
+    }
+    .custom-text-color {
+        color: #ffffff; /* Example: change this to your desired text color */
+    }
+
+    .hero {
+    background-image: url('./img/logospa.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+    padding: 150px 20px; /* Adjusted padding for responsiveness */
+    min-height: 100vh; /* Ensures the hero section takes at least the full height of the viewport */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.hero h1 {
+    font-size: 3rem; /* Adjust text size for better readability */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a text shadow for better contrast */
+}
+
+.hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adds a text shadow for better contrast */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .hero {
+        padding: 120px 15px; /* Reduced padding on smaller screens */
+    }
+    
+    .hero h1 {
+        font-size: 2.5rem; /* Smaller heading on smaller screens */
+    }
+    
+    .hero p {
+        font-size: 1rem; /* Adjust paragraph size for smaller screens */
+    }
+}
+
+        .service-card img {
+            border-radius: 10px;
+        }
+        .footer {
+            background-color: #343a40;
+            color: dark;
+            padding: 20px 0;
+            text-align: center;
+        }
+        .navbar-brand {
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+        .btn-primary {
+            background-color: #003cff;
+            border-color: #003cff;
+        }
+        .btn-primary:hover {
+            background-color: #4cae4c;
+            border-color: #4cae4c;
+        }
+
+        .navbar-brand {
+    font-family: 'lato', cursive;
+}
+
+/* Style for the floating WhatsApp button */
+.whatsapp-btn {
+position: fixed;
+bottom: 50px; /* Position it at the bottom of the screen */
+right: 20px;  /* Position it on the right side */
+background-color: #25D366; /* WhatsApp green */
+color: white;
+border-radius: 50%;
+padding: 15px;
+box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+font-size: 12px;
+z-index: 1000; /* Ensures the button is always on top */
+transition: transform 0.3s ease-in-out;
+}
+
+.whatsapp-btn:hover {
+transform: scale(1.1); /* Slightly enlarge on hover */
+}
+
+.whatsapp-btn i {
+font-size: 35px;
+}
+
+
+    </style>
+</head>
+<body>
+ <!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-family: 'Lato', cursive;">
+    <div class="container">
+        <a class="navbar-brand" href="#" style="font-family: 'Lato', cursive;">
+            <!-- Image Before Text -->
+            <img src="./img/logospablack.png" alt="Logo" style="width: 70px; height: 70px; margin-right: 8px;">
+            Lotus Spa
+        </a>
+        
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#services">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <div class="container">
+            <h1 class="display-4">Relax, Rejuvenate, Recharge</h1>
+            <p class="lead">Experience ultimate relaxation at Lotus Spa</p>
+            <a href="#services" class="btn btn-primary btn-lg">Explore Services</a>
+        </div>
+    </header>
+<!-- About Section -->
+<section id="about" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">About Us</h2>
+        <div class="row">
+            <div class="col-lg-6">
+                <p>At Lotus Spa, we are dedicated to providing a serene and rejuvenating experience. Our team of professional therapists and estheticians ensure you leave feeling relaxed and refreshed.</p>
+            </div>
+            <div class="col-lg-6">
+                <img src="./img/masseuse.avif" alt="About Us" class="img-fluid rounded shadow-sm">
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Services Section -->
+<section id="services" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Services</h2>
+        <div class="row g-4">
+            <!-- Massage Therapy -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card shadow-sm">
+                    <img src="./img/massagetherapy.avif" class="card-img-top" alt="Massage Therapy">
+                    <div class="card-body">
+                        <h5 class="card-title">Massage Therapy</h5>
+                        <p class="card-text">Our therapeutic massage services are designed to relieve stress, alleviate tension, and promote overall relaxation. Using a variety of techniques tailored to your needs, our skilled therapists will focus on releasing muscle tightness and improving circulation. Whether you prefer a deep tissue massage or a gentle relaxation treatment, our massage therapy will leave you feeling refreshed and rejuvenated.</p>
+                        <p><strong>Duration:</strong> 60 minutes</p>
+                        <p><strong>Price:</strong> $80</p>
+                        <p><strong>What’s Included:</strong> Customized treatment plan, soothing oils, and a calming atmosphere to enhance your relaxation experience.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Facial Treatments -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card shadow-sm">
+                    <img src="./img/facialtreatment.avif" class="card-img-top" alt="Facial Treatments">
+                    <div class="card-body">
+                        <h5 class="card-title">Facial Treatments</h5>
+                        <p class="card-text">Our signature facial treatments are designed to rejuvenate your skin, leaving it glowing and refreshed. From deep cleansing to exfoliation, we use premium products to target your skin's specific needs, whether it’s hydration, anti-aging, or acne treatment. Our therapists provide personalized consultations to ensure the right treatment for your skin type, allowing you to achieve the most radiant results.</p>
+                        <p><strong>Duration:</strong> 45 minutes</p>
+                        <p><strong>Price:</strong> $65</p>
+                        <p><strong>What’s Included:</strong> Deep cleansing, exfoliation, mask application, and hydration tailored to your skin's needs. A relaxing massage to finish off the treatment.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Spa Packages -->
+            <div class="col-lg-4 col-md-6">
+                <div class="card service-card shadow-sm">
+                    <img src="./img/spapackages.avif" class="card-img-top" alt="Spa Packages">
+                    <div class="card-body">
+                        <h5 class="card-title">Spa Packages</h5>
+                        <p class="card-text">Our luxurious spa packages are the perfect way to indulge in a full day of relaxation and wellness. Each package includes a variety of treatments such as massage therapy, facials, body wraps, and foot treatments. Designed for ultimate relaxation, our packages allow you to unwind and enjoy a combination of services that cater to your body’s every need. It’s the perfect way to pamper yourself or gift a loved one a day of pure bliss.</p>
+                        <p><strong>Duration:</strong> 4 hours</p>
+                        <p><strong>Price:</strong> $250</p>
+                        <p><strong>What’s Included:</strong> Full body massage, customized facial, detoxifying body wrap, and foot rejuvenation. A complimentary beverage is also provided to enhance your relaxation.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    
+<!-- Client Testimonials Section -->
+<section id="reviews" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-5 font-weight-bold ">Client Testimonials</h2>
+        <div class="row g-4">
+            <!-- Testimonial 1 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body">
+                        <p class="card-text text-muted font-italic">"An exceptional experience from start to finish. The massage was impeccable, leaving me feeling revitalized. I highly recommend this service to anyone seeking relaxation and rejuvenation."</p>
+                        <h5 class="card-title text-primary mt-3">- Sarah J.</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 2 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body">
+                        <p class="card-text text-muted font-italic">"The atmosphere and professionalism exceeded my expectations. The facial treatment was transformative, and my skin has never looked better."</p>
+                        <h5 class="card-title text-primary mt-3">- Michael T.</h5>
+                    </div>
+                </div>
+            </div>
+            <!-- Testimonial 3 -->
+            <div class="col-lg-4">
+                <div class="card shadow-lg border-0 rounded-lg">
+                    <div class="card-body">
+                        <p class="card-text text-muted font-italic">"The spa package was a true indulgence. Every detail was carefully considered, and the team’s dedication made my experience unforgettable. The gourmet lunch was a wonderful touch."</p>
+                        <h5 class="card-title text-primary mt-3">- Emma L.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Find Us Section -->
+<section id="find-us" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Find Us</h2>
+        <div class="row">
+            <!-- Address Information -->
+            <div class="col-md-6">
+                <h5>Our Location</h5>
+                <p><strong>Lotus Spa</strong></p>
+                <p>123 Tranquil Road, Serenity City, Bliss State, 12345</p>
+                <p><strong>Phone:</strong> +1 (234) 567-890</p>
+                <p><strong>Email:</strong> <a href="mailto:info@lotus.com">info@lotus.com</a></p>
+                <p><strong>Business Hours:</strong><br> Monday to Friday, 9 AM - 6 PM <br> Weekends: Closed</p>
+            </div>
+
+         <!-- Embedded Google Map -->
+<div class="col-md-6">
+    <h5>Find Us on the Map</h5>
+    <div class="embed-responsive embed-responsive-16by9">
+        <!-- Google Maps Embed URL -->
+        <iframe class="embed-responsive-item" 
+            src="https://www.google.com/maps/embed?pb=!1m17!1m12!1m3!1d3103.6271029161867!2d-83.62507992626635!3d9.08097128817593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m2!1m1!2zOcKwMDQnNTEuNSJOIDgzwrAzNycyMS4wIlc!5e1!3m2!1ses-419!2scr!4v1736115775921!5m2!1ses-419!2scr" 
+            width="500" 
+            height="400" 
+            style="border:0;" 
+            allowfullscreen="" 
+            loading="lazy" 
+            referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+    </div>
+</div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- Social Media Contact Section -->
+<section id="contact" class="py-5">
+    <div class="container">
+        <h2 class="text-center mb-4">Connect with Us</h2>
+        <p class="text-center mb-4">We'd love to hear from you! Follow us on social media or drop us a message below.</p>
+        <div class="text-center mb-4">
+            <!-- Social Media Icons -->
+            <a href="https://facebook.com/yourpage" class="me-3" target="_blank">
+                <i class="fab fa-facebook fa-2x" style="color: #4267B2;"></i>
+            </a>
+            <a href="https://instagram.com/yourprofile" class="me-3" target="_blank">
+                <i class="fab fa-instagram fa-2x" style="color: #C13584;"></i>
+            </a>
+            <a href="https://twitter.com/yourhandle" class="me-3" target="_blank">
+                <i class="fab fa-twitter fa-2x" style="color: #1DA1F2;"></i>
+            </a>
+            <a href="https://linkedin.com/in/yourprofile" class="me-3" target="_blank">
+                <i class="fab fa-linkedin fa-2x" style="color: #0077B5;"></i>
+            </a>
+        </div>
+    </div>
+</section>
+
+<!-- Our Partners Section -->
+<section id="partners" class="py-5 bg-light">
+    <div class="container">
+        <h2 class="text-center mb-4">Our Partners</h2>
+        <div class="row g-4">
+            <!-- Partner 1 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="partner-logo">
+                    <img src="./img/partners.avif" alt="Partner 1" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                </div>
+            </div>
+            <!-- Partner 2 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="partner-logo">
+                    <img src="./img/partners.avif" alt="Partner 2" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                </div>
+            </div>
+            <!-- Partner 3 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="partner-logo">
+                    <img src="./img/partners.avif" alt="Partner 3" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                </div>
+            </div>
+            <!-- Partner 4 -->
+            <div class="col-6 col-sm-4 col-md-3 col-lg-3">
+                <div class="partner-logo">
+                    <img src="./img/partners.avif" alt="Partner 4" class="img-fluid" style="max-height: 100px; object-fit: contain;">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- WhatsApp Floating Button -->
+<a href="https://wa.me/1234567890" target="_blank" class="whatsapp-btn">
+    <i class="fab fa-whatsapp"></i>
+</a>
+
+  <!-- Footer -->
+  <footer class="py-5 custom-bg-color custom-text-color">
+    <div class="container">
+        <div class="row">
+            <!-- Company Info -->
+            <div class="col-md-4 mb-4">
+                <h5>Lotus Spa</h5>
+                <p style="word-spacing: 2px;">For over 20 years, Lotus Spa has been creating tranquil and rejuvenating experiences, offering an oasis of wellness and relaxation. Our team of highly skilled therapists and wellness experts is dedicated to delivering personalized treatments that address your unique needs. Whether you are looking to unwind with a soothing massage, refresh with a revitalizing facial, or indulge in one of our signature spa packages, we pride ourselves on providing exceptional care in every service. At Lotus Spa, we cultivate an environment of serenity and well-being, ensuring that each visit leaves you feeling renewed, balanced, and restored.</p>
+            </div>                
+
+            <!-- Contact Information -->
+            <div class="col-md-4 mb-4">
+                <h5>Contact Information</h5>
+                <ul class="list-unstyled">
+                    <li><strong><i class="fas fa-envelope"></i> Email:</strong> <a href="mailto:info@Green Valley.com" class="text-white text-decoration-none">info@lotus.com</a></li>
+                    <li><strong><i class="fas fa-phone-alt"></i> Phone:</strong> <a href="tel:+1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a></li>
+                    <li><strong><i class="fab fa-whatsapp"></i> WhatsApp:</strong> <a href="https://wa.me/1234567890" class="text-white text-decoration-none">+1 (234) 567-890</a></li>
+                    <li><strong><i class="fas fa-business-time"></i> Business Hours:</strong> Monday to Friday, 9 AM - 6 PM. Weekends: Closed</li>
+                </ul>
+                
+            </div>
+
+            <!-- Social Media -->
+            <div class="col-md-4 mb-4">
+                <h5>Connect with Us</h5>
+                <div class="d-flex">
+                    <a href="#" class="text-white me-3"><i class="fab fa-facebook"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="text-white me-3"><i class="fab fa-linkedin"></i></a>
+                    <a href="#" class="text-white"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div style="display: flex; justify-content: center;">
+                <img src="./img/logospawhite.png" alt="Logo" class="img-fluid" style="max-width: 20%; height: auto;">
+              </div>
+                      </div>
+        <hr class="my-4">
+        <div class="text-center">
+            <p>&copy; 2024 <a href="https://www.nativainnovations.com" class="text-white text-decoration-none" target="_blank">Nativa Innovations</a>. All Rights Reserved.</p>
+            <p><a href="#" class="text-white text-decoration-none">Privacy Policy</a> | <a href="#" class="text-white text-decoration-none">Terms of Service</a></p>
+        </div>
+    </div>
+</footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.
